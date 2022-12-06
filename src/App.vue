@@ -1,11 +1,10 @@
 <template>
-<div>
-  <MyButton></MyButton>
-</div>
+  <div>
+    <ConnectApp></ConnectApp>
+  </div>
 </template>
 
 <script setup>
-import MyButton from "@/MyButton.vue"
-
+import ConnectApp from "remoteConnect/ConnectApp";
 
 </script>

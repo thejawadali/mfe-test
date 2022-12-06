@@ -19,9 +19,10 @@ module.exports = defineConfig({
         name: "remote",
         filename: 'remoteEntry.js',
         exposes: {
-          "./remoteButton": "./src/MyButton.vue"
         },
-        remotes: {},
+        remotes: {
+          remoteConnect: "rd_connect@https://dev.d23iaemtgir7z7.amplifyapp.com/remoteEntry.js"
+        },
         shared: {
           ...deps,
           vue: {
